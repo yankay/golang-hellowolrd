@@ -35,6 +35,7 @@ cp ./api/swagger/v1/helloworld.swagger.json assets/swagger-ui/helloworld.swagger
 
 cd ./api/proto/v1/
 protoc -I=".:./../../../internal/vendor/proto" --grpc-gateway-ts_out=. helloworld.proto
+
 cd ../../../
 rm -rf internal/ts
 mkdir -p internal/ts
