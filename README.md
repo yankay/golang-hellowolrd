@@ -17,15 +17,15 @@ It would provide a GRPC,JSON,Swagger Web Interface.
 
 #### Build
 ```
-git clone https://github.com/yankay/golang-hellowolrd.git
-cd golang-hellowolrd
+git clone https://github.com/yankay/golang-helloworld.git
+cd golang-helloworld
 make
 ```
 
 #### Run
 
 ```
-./bin/golang-hellowolrd
+./bin/golang-helloworld
 ```
 
 Access the Helloword by :
