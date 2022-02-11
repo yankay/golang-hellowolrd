@@ -8,7 +8,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	pb "github.com/yank1/golang-helloworld/pkg/helloworld"
+	pb "github.com/yankay/golang-helloworld/pkg/helloworld"
 	"google.golang.org/grpc"
 	"google.golang.org/protobuf/types/known/emptypb"
 )

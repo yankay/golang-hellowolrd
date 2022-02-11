@@ -11,6 +11,11 @@ export PATH=$PATH:$GOROOT/bin:$GOPATH/bin:~/go/bin/
 protoc -I=".:./internal/vendor/proto" --go_out=./pkg  ./api/proto/v1/helloworld.proto
 protoc -I=".:./internal/vendor/proto" --go-grpc_out=require_unimplemented_servers=false:./pkg  ./api/proto/v1/helloworld.proto
 
+# GRPC Client
+protoc -I=".:./internal/vendor/proto" --go_out=./api  ./api/proto/v1/helloworld.proto
+protoc -I=".:./internal/vendor/proto" --go-grpc_out=require_unimplemented_servers=false:./api  ./api/proto/v1/helloworld.proto
+
+
 # GRPC GW
 
 protoc -I=".:./internal/vendor/proto" --grpc-gateway_out . \
@@ -31,5 +36,6 @@ cp ./api/swagger/v1/helloworld.swagger.json assets/swagger-ui/helloworld.swagger
 cd ./api/proto/v1/
 protoc -I=".:./../../../internal/vendor/proto" --grpc-gateway-ts_out=. helloworld.proto
 cd ../../../
-mkdir internal/ts
+rm -rf internal/ts
+mkdir -p internal/ts
 mv ./api/proto/v1/*.ts internal/ts
