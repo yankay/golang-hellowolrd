@@ -1,5 +1,7 @@
 # Standard Go Project Layout
 
+[![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/5567/badge)](https://bestpractices.coreinfrastructure.org/projects/5567)
+
 ## Overview
 
 This is a basic helloworld golang web program , just for personal use.
