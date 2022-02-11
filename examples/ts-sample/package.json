@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "golang-helloworld-api": "^0.3.2"
+  }
+}

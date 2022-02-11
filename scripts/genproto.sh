@@ -33,8 +33,6 @@ cp ./api/swagger/v1/helloworld.swagger.json assets/swagger-ui/helloworld.swagger
 
 # Typescript
 
-rm -rf ./api/ts
-
 cd ./api/proto/v1/
 protoc -I=".:./../../../internal/vendor/proto" --grpc-gateway-ts_out=. helloworld.proto
 cd ../../../
