@@ -33,6 +33,7 @@ func TestMainGRPC(m *testing.T) {
 		m.Fatal(err)
 	}
 	defer conn.Close()
+
 	c := pb.NewHelloworldClient(conn)
 	ctx, client := context.WithTimeout(context.Background(), time.Second)
 	defer client()

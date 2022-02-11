@@ -18,7 +18,7 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/reflection"
 
-	pb "github.com/yank1/golang-helloworld/pkg/helloworld"
+	pb "github.com/yankay/golang-helloworld/pkg/helloworld"
 )
 
 // RunInProcessGateway starts the invoke in process http gateway.

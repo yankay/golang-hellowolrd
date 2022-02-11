@@ -15,7 +15,7 @@ It would provide a GRPC,JSON,Swagger Web Interface.
 
 #### Build
 ```
-git clone https://github.com/yank1/golang-hellowolrd.git
+git clone https://github.com/yankay/golang-hellowolrd.git
 cd golang-hellowolrd
 make
 ```
