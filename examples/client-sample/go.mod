@@ -3,7 +3,7 @@ go 1.17
 module example
 
 require (
-	github.com/yankay/golang-helloworld-api v0.3.1
+	github.com/yankay/golang-helloworld-api v0.3.2
 	google.golang.org/grpc v1.44.0
 	google.golang.org/protobuf v1.27.1
 

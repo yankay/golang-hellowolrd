@@ -33,10 +33,16 @@ cp ./api/swagger/v1/helloworld.swagger.json assets/swagger-ui/helloworld.swagger
 
 # Typescript
 
+rm -rf ./api/ts
+
 cd ./api/proto/v1/
 protoc -I=".:./../../../internal/vendor/proto" --grpc-gateway-ts_out=. helloworld.proto
-
 cd ../../../
-rm -rf internal/ts
-mkdir -p internal/ts
-mv ./api/proto/v1/*.ts internal/ts
+mkdir -p ./api/ts
+mv ./api/proto/v1/*.ts ./api/ts
+
+cd ./internal/vendor/proto/google/protobuf/
+protoc -I=".:./../../" --grpc-gateway-ts_out=. empty.proto
+cd ../../../../../
+mkdir -p ./api/ts/google/protobuf
+mv ./internal/vendor/proto/google/protobuf/*.ts ./api/ts/google/protobuf
