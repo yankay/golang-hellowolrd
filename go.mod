@@ -8,7 +8,7 @@ require (
 	github.com/grpc-ecosystem/grpc-gateway/v2 v2.7.2
 	github.com/grpc-ecosystem/protoc-gen-grpc-gateway-ts v1.1.1
 	github.com/soheilhy/cmux v0.1.5
-	github.com/stretchr/testify v1.7.0
+	github.com/stretchr/testify v1.7.1
 	golang.org/x/net v0.0.0-20210405180319-a5a99cb37ef4
 	google.golang.org/genproto v0.0.0-20211208223120-3a66f561d7aa
 	google.golang.org/grpc v1.44.0
